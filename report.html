@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="lib/jquery-3.3.1.min.js" ></script>
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
 		background: #fff;
 		color:white;
 	}
-	#chart_div, #table_div, #donutchart{
+	#chart_div, #table_div, #donutchart, #series_chart_div, #bar_chart, #timeline_chart, #curve_chart, #gauge_chart, #column_chart{
 		background: #fff;
 		box-shadow: 0 0 5px 0 rgba(43,43,43,.1), 0 11px 6px -7px rgba(43,43,43,.1);
 		border: 1px solid rgba(0,0,0,.125);
@@ -92,7 +92,7 @@
 <div class="col-sm-2">&nbsp;</div>
 </div>		
 </header>
-<div class="container">
+<div class="container" style="padding-bottom: 30px;">
 	<div class="row">
 		<div class="col-sm-6">
 			<div id="chart_div"></div> 
@@ -104,6 +104,36 @@
 	<div class="row">
 		<div class="col-sm-6">
 			<div id="donutchart"></div>
+		</div>
+		<div class="col-sm-6">
+			 <div id="series_chart_div" style="height:300px"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			  <div id="bar_chart" style="height: 300px"></div>
+		</div>
+		<div class="col-sm-6">
+			 <div id="curve_chart" style="height: 300px"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<p style="margin-top: 10px;font-weight: bold">Let's say you want to plot when American presidents served their terms. Here, the "resources" are the presidents, and we can plot each president's term as a bar:</p>
+			<div id="timeline_chart" style="height: 200px;"></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-6">
+			<div id="gauge_chart"></div>
+		</div>
+		<div class="col-sm-6">
+			  <div id="column_chart"></div>
+		</div>
+	</div>
+	<div class="row" style="margin-top: 20px">
+		<div class="col-sm-12 text-center">
+			We are using google char for this project, you can see more sample here: <a href="https://developers.google.com/chart/interactive/docs/gallery" target="blank">GoogleChart!</a>
 		</div>
 	</div>
 </div>
