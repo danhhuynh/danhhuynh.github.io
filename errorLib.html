@@ -24,21 +24,12 @@
 	<button id="sendMes">Send</button>
 	<p id="resultfromserver"></p>
 	<script>
-// 		$("#sendMes").click(function(){
-// 			let input = $("input[name=error_input]").val();
-// 			$.post("https://wt-897d063c63715c7a5c2ad709d4e86bfa-0.sandbox.auth0-extend.com/errorLibProcess", {query: input}, function(data, status){
-// 		    	$("#resultfromserver").text(data);
-// 			console.log(data);
-// 		  });
-// 		});
-		$.ajax({
-		  url: "https://wt-897d063c63715c7a5c2ad709d4e86bfa-0.sandbox.auth0-extend.com/errorLibProcess", 
-		  dataType: "json",
-		  type: 'POST',
-		  data: {input: "demo"},
-		  success: function(result){
-		    console.log(result); 
-		  }
+		$("#sendMes").click(function(){
+			let input = $("input[name=error_input]").val();
+			$.post("https://wt-897d063c63715c7a5c2ad709d4e86bfa-0.sandbox.auth0-extend.com/errorLibProcess", {query: input}, function(data, status){
+		    	$("#resultfromserver").text(data);
+			console.log(data);
+		  });
 		});
 	</script>
 </body>
